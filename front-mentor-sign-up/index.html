@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+<main class ="box">
+  <section class ="text-section">
+    <h1 class ="title">  Stay updated!</h1>
+    <p> Join 60,000+ product managers receiving monthly updates </p>
+    <div class ="succes-list">
+      <div class ="list">
+        <img class ="icon-list"src = "assets/images/icon-list.svg" alt ="icon list"> 
+         <p class="text-list">Prodduct discovery and building what matters</p>
+        </div>
+      <div class ="list">
+        <img class ="icon-list"src = "assets/images/icon-list.svg" alt ="icon list"> 
+         <p class="text-list">Measuring to ensure updates are a success</p>
+        </div>
+      <div class ="list">
+        <img class ="icon-list"src = "assets/images/icon-list.svg" alt ="icon list"> 
+        <p class="text-list">And much more!</p>
+      </div>
+    </div>
+    <label for="email">  Email address</label>
+    <input class ="input" type = "email" name = "email" placeholder=" email@company.com" oninput = "f_verif_email()"/>
+    <button class ="submit button" onclick="f_change_page('none','flex')">Subscribe to monthly newsletter</button>
+  </section>
+  <div class="img-section"></div>
+
+</main>
+  <!-- Sign-up form start -->
+<div class ="box footer">
+  <img class ="icon-validate"src = "assets/images/icon-success.svg" alt ="icon succes">
+  <h2 class ="title">Thanks for subscribing!</h2>
+  <p></p>
+  <button class ="submit button responsive" onclick="f_change_page('flex','none')">Dismiss message</button>
+</div>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  
+  <!--A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.-->
+
+  
+
+  <!-- Success message end -->
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
